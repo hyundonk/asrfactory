@@ -2,6 +2,7 @@
 # created by hyuk@microsoft.com
 # input cvs file has list of "sysprep"ed VMs. Use this powershell script For each "sysprep"ed VM to generalized create image, and upload it to Shared Image Gallery as Image definition
 
+
 Param (
     [Parameter(Mandatory=$true)]
     $inputfile,
