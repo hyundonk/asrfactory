@@ -34,7 +34,8 @@ $counter = 0
 Foreach($ReplicationProtectedItem in $ReplicationProtectedItems){
     if($ReplicationProtectedItem.TestFailoverState -eq "Initiating"){
         Write-Host "[($counter) $ReplicationProtectedItem.RecoveryAzureVMName] Cleanup TestFailover ..."
-        Start-ASRTestFailoverCleanupJob -ReplicationProtectedItem $ReplicationProtectedItem
+        Start-AzRecoveryServicesAsrTestFailoverCleanupJob -ReplicationProtectedItem $ReplicationProtectedItem -Comments "testing done"
+        #Start-ASRTestFailoverCleanupJob -ReplicationProtectedItem $ReplicationProtectedItem
         $counter++
     }
 }

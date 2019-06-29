@@ -7,6 +7,8 @@ Param (
     $inputfile
 )
 
+
+Write-Host "Reading Recovery Services Valut info from $inputfile ..."
 $RSV = Import-CSV $inputfile 
 
 $resourcegroupname = $RSV.VAULT_RESOURCE_GROUP
