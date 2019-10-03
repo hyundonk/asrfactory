@@ -1,0 +1,2 @@
+﻿VAULT_RESOURCE_GROUP,VAULT_NAME,PRIMARY_FABRIC_NAME,RECOVERY_FABRIC_NAME,PRIMARY_PROTECTION_CONTAINER_NAME,RECOVERY_PLAN_NAME_PREFIX,TARGET_VNET_RESOURCE_GROUP,TARGET_VNET_NAME
+mytest-dr,mytestVMVault-DR,asr-a2a-default-koreacentral,asr-a2a-default-koreasouth,asr-a2a-default-koreacentral-container,mytest-RP-,mytest-service-asr,mytest-service-vnet-asr
